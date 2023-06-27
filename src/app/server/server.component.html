@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <p>Input Form</p>
+    <input class="form-control" [(ngModel)]="userName" />
+    <p>{{ userName }}</p>
+    <button
+      (click)="userName = ''"
+      [disabled]="userName == ''"
+      class="btn btn-primary"
+    >
+      Reset user
+    </button>
+  </div>
+  <hr />
+  <div class="row">
+    <button (click)="showDetail()">Show Details</button>
+    <p *ngIf="isShowDetail">secure sentence</p>
+    <p
+      *ngFor="let item of log"
+      [ngStyle]="{ backgroundColor: item >= 5 ? 'green' : 'transparent' }"
+      [ngClass]="{ 'white-color': item >= 5 }"
+    >
+      {{ item }}
+    </p>
+  </div>
+</div>
