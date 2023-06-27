@@ -1,9 +1,11 @@
 <div class="row">
   <div class="col-xs-10">
-    <app-shopping-edit></app-shopping-edit>
+    <app-shopping-edit
+      (ingredientAdded)="shoppingList($event)"
+    ></app-shopping-edit>
     <hr />
     <ul class="list-group">
-      <p>hello</p>
+      <h4 class="text-primary display-4">Shipping List</h4>
       <a
         href="#"
         class="list-group-item"
