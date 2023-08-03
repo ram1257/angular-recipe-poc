@@ -8,7 +8,7 @@ const appRoute: Routes = [
   {
     path: 'recipes',
     loadChildren: () =>
-      import('./recipes/recipes.component').then((m) => m.RecipesComponent),
+      import('./recipes/recipe.module').then((m) => m.RecipeModule),
   },
   { path: 'auth', component: AuthComponent },
 ];
