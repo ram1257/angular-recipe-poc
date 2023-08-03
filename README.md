@@ -1,7 +1,7 @@
 # Recipe Book Angular Application
 
-This is a web application built using Angular that allows users to add, edit, and manage their favorite recipes.
-This application use the firebase to store the data and authentication.
+- This is a web application built using Angular that allows users to add, edit, and manage their favorite recipes.
+- This application use the firebase to store the  recipe data and user data for authentication purpose.
 
 ## Table of Contents
 
